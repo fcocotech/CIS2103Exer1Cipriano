@@ -3,7 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+
 package pockergame;
+import java.util.*;
 /**
  *
  * @author ciprianofr
@@ -20,7 +22,17 @@ public class PockerGame {
     public static void main(String[] args) {
         // TODO code application logic
         PockerGame oMain = new PockerGame();
-        oMain.GetMessage();
+        oMain.NewGame(5,10);
+    }
+    
+    private void NewGame(int numOfPlayers,int initAnte){
+        ArrayList<PlayerClass> players = new ArrayList<PlayerClass>();
+        
+        for(int i=0;i<numOfPlayers;i++){
+            players.add(new PlayerClass("Player" + (i+1)));
+        }
+        
+        
     }
     
     private void GetMessage(){
