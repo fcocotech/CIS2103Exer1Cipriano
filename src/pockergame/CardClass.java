@@ -10,5 +10,8 @@ package pockergame;
  * @author ciprianofr
  */
 public class CardClass {
+    public int suite[];
+    
+    public void functionname(){}
     
 }
