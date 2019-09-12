@@ -10,7 +10,16 @@ package pockergame;
  * @author ciprianofr
  */
 public class PlayerClass {
-    public CardClass hand [];
+    //public CardClass hand [];
+    public String name;
+    public int chips;
     
+    public PlayerClass(){}
+    public PlayerClass(String pName){
+        this.name = pName;
+    }
+    public void FunctionInPlayer(){
+        System.out.println("This functions is inside PlayerClass");
+    } 
     
 }
