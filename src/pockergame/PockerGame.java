@@ -18,7 +18,13 @@ public class PockerGame {
     CardClass objCard = new CardClass();
     
     public static void main(String[] args) {
-        // TODO code application logic here
+        // TODO code application logic
+        PockerGame oMain = new PockerGame();
+        oMain.GetMessage();
     }
     
+    private void GetMessage(){
+        
+        this.obj.FunctionInPlayer();
+    }
 }
